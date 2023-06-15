@@ -11,7 +11,9 @@ body {
     font-family: 'Rubik';
     font-style: normal;
 }
-
+main{
+    position: relative;
+}
 @media screen and (min-width: 768px) {
     main{
     display: flex;

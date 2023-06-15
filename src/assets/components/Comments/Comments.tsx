@@ -2,9 +2,10 @@ import { StyledComment, ReplyCont } from "./Comments.styled";
 import Reply from "../Replies/Reply";
 import { ReplyTypes } from "../Types";
 import reply from "../../../../public/images/icon-reply.svg";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Edit from "../EditComment/Edit";
 import AddReply from "../AddReply/AddReply";
+import { OverlayContext } from "../OverlayContext";
 
 interface Props {
   text: string;
@@ -31,6 +32,8 @@ export default function Comments({
   idNumber,
   setId,
 }: Props) {
+  const CommentOverlay = useContext(OverlayContext);
+  console.log(CommentOverlay);
   const [currentScore, setCurrentScore] = useState(score);
   const [showEdit, setShowEdit] = useState(false);
   const [commentText, setCommentText] = useState(text);
