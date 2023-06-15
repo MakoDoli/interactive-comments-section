@@ -2,7 +2,6 @@ import { GlobalStyles } from "./GlobalSyles";
 import Container from "./assets/components/Container/Container";
 import data from "../data.json";
 import Overlay from "./assets/components/Overlay";
-import { useState } from "react";
 
 function App() {
   return (
