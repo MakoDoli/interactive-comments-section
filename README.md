@@ -2,5 +2,5 @@
 
 I used useContext for first time
 
-[preview](desktop-preview.jpg)
+![preview](desktop-preview.jpg)
 
